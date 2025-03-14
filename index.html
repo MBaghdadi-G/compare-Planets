@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🌌 Planet Comparison 🌍</h1>
+        <div class="selectors">
+            <select id="planet1">
+                <option value="mercury">Mercury</option>
+                <option value="venus">Venus</option>
+                <option value="earth" selected>Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+            </select>
+            <span>VS</span>
+            <select id="planet2">
+                <option value="mercury">Mercury</option>
+                <option value="venus" selected>Venus</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="saturn">Saturn</option>
+                <option value="uranus">Uranus</option>
+                <option value="neptune">Neptune</option>
+            </select>
+        </div>
+    </header>
+
+    <section class="planet-display">
+        <img id="planet-img1" src="imgs/earth.png" alt="Planet 1">
+        <img id="planet-img2" src="imgs/Venus.png" alt="Planet 2">
+    </section>
+
+    <section class="comparison">
+        <div class="compare-box">
+            <h2>Diameter (km)</h2>
+            <p><span id="diameter1"></span> <span class="arrow" id="arrow-diameter"></span> <span id="diameter2"></span></p>
+        </div>
+        <div class="compare-box">
+            <h2>Mass (Earth = 1)</h2>
+            <p><span id="mass1"></span> <span class="arrow" id="arrow-mass"></span> <span id="mass2"></span></p>
+        </div>
+        <div class="compare-box">
+            <h2>Moons</h2>
+            <p><span id="moons1"></span> <span class="arrow" id="arrow-moons"></span> <span id="moons2"></span></p>
+        </div>
+        <div class="compare-box">
+            <h2>Orbit Distance (million km)</h2>
+            <p><span id="orbit1"></span> <span class="arrow" id="arrow-orbit"></span> <span id="orbit2"></span></p>
+        </div>
+        <div class="compare-box">
+            <h2>Year Length (Earth days)</h2>
+            <p><span id="year1"></span> <span class="arrow" id="arrow-year"></span> <span id="year2"></span></p>
+        </div>
+        <div class="compare-box">
+            <h2>Temperature (°C)</h2>
+            <p><span id="temp1"></span> <span class="arrow" id="arrow-temp"></span> <span id="temp2"></span></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
